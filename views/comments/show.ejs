@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Comment details</title>
+  </head>
+  <body>
+    <h3>Comment details</h3>
+      <% if (comment !== undefined){ %>
+        Username: <strong><%= comment.username %> </strong>
+        <br>
+        Comment: <strong><%= comment.comment %></strong>
+      <% } else { %>
+        <h3>Requested user not registered with us!</h3>
+      <% } %>
+      <br>
+      <a href="/comments">Back to lists</a>
+  </body>
+</html>
